@@ -145,7 +145,7 @@ string NATCompiler_ipt::PrintRule::_startRuleLine()
     if (XMLTools::version_compare(version, "1.4.20")>=0)
         opt_wait = "-w ";
     else
-        opt_wait = ""; 
+        opt_wait = "";
 
     return res + opt_wait + string("-t nat -A ");
 }
